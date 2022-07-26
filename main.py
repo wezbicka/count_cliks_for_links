@@ -6,7 +6,7 @@ from urllib.parse import urlparse
 from dotenv import load_dotenv
 
 
-def createParser():
+def get_link():
     parser = argparse.ArgumentParser()
     parser.add_argument('link', type=str)
     args = parser.parse_args()
@@ -53,7 +53,7 @@ def count_clicks(api_bitlink_token, bitlink):
 def main():
     load_dotenv()
     api_bitlink_token = os.environ['API_BITLINK_TOKEN']
-    user_link = createParser()
+    user_link = get_link()
     parsed_url = urlparse(user_link)
     prepared_url = f'{parsed_url.netloc}{parsed_url.path}'
     try:
