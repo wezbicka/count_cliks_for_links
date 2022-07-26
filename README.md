@@ -9,6 +9,12 @@ HTTP сервис для сокращения URL наподобие Bitly и д
 
 Программа запрашивает ссылку, делает битлинк, если ссылка им не является, иначе выводит количество кликов по ней
 
+python main.py https://docs.python.org/3.6/howto/argparse.html
+Битлинк https://bit.ly/3BbJKFh
+
+python main.py https://bit.ly/3BbJKFh
+0
+
 ## Как установить
 1. Создайте переменную окружения API_BITLINK_TOKEN и положите в неё токен API Bitly. 
 Зарегистрируйтесь [здесь](https://app.bitly.com/Bm6mipUaka0/bitlinks/3BbJKFh)
